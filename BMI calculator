@@ -1,0 +1,24 @@
+# This is a BMI calculator written in python code.
+
+#Get user input for weight in pounds and height in feet
+weight_pounds = float(input("Enter your weight in pounds: "))
+height_feet = float(input("Enter your height in feet: "))
+
+#Convert height from feet to inches
+height_inches = height_feet * 12
+
+#Calculate BMI using the formula
+BMI = (weight_pounds / (height_inches * height_inches)) * 703
+
+#Display the calculated BMI
+print("your bmi is:", BMI)
+
+#Interpret the BMI
+if BMI < 18.5:
+    print("You are underweight.")
+elif 18.5 <= BMI < 25:
+    print("Ypu are normal weight.")
+elif 25 <= BMI < 30:
+    print("You are overweight/")
+else:
+    print("Yor are obese.")
